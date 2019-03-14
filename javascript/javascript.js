@@ -1,7 +1,11 @@
 console.log("Jake's .js is connected to .html! :)");
 
+// IMPORTANT NOTE: buttons show up when I do it from local but not from github, even with .ready function.
+// things yet to be accomplished will be in notes on Spot
+
 // function that tells the functions of the javascript to take a chill pill until all our ducks are in a row
-// Hadassah had me write this and although it can trick things up in certain scenarios, I dont think it's absence was ever the problem or antidote.
+// Hadassah had me write this and although it can trick things up in certain scenarios, I dont think it's absence was ever the problem and or antidote.
+
 $(document).ready(function() {
 	// API key
 	var myKey = "&api_key=d7S1j7qyKKGKeVfB477Ut47RkSESq0SM";
