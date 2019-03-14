@@ -12,12 +12,14 @@ var topics = [
 
 function createButton() {
 	for (i = 0; i < topics.length; i++) {
+		var div = $("<div>");
+		div.attr("class", "divbuttons");
 		var btn = $("<button>");
-		btn.attr("class", "btn" + topics[i]);
-
+		btn.attr("class", "buttons");
+		btn.attr("id", topics[i]);
 		btn.text(topics[i]);
-		$("#btn1").append(btn);
-		console.log(btn);
+		div.append(btn);
+		console.log("END OF CREATE BUTTON FUNCTION", btn);
 	}
 }
 // .empty()]
@@ -40,7 +42,7 @@ var myKey = "&api_key=d7S1j7qyKKGKeVfB477Ut47RkSESq0SM";
 var queryURL =
 	"http://api.giphy.com/v1/gifs/search?q=" + "&r=g&limit=10" + myKey;
 
-console.log("#btn1", "i'm here!");
+console.log(btn1, "BUTTON 1 CLICKED");
 // console.log(queryURL);
 
 var myURL = $.ajax({
@@ -56,9 +58,9 @@ var myURL = $.ajax({
 // response.data[i];
 
 function clickButton() {
-	btn.on("click");
+	btn.on("click", btn);
 }
-console.log(btn.class);
+console.log(btn);
 
 clickButton();
 console.log(clickButton);
